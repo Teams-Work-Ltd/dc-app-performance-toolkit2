@@ -16,14 +16,14 @@ environment_name = "dcapt-product"
 # For JSM set product as jira.
 # e.g.: products = ["jira"]
 # ! REQUIRED !
-products = ["product-to-deploy"]
+products = ["jira"]
 
 # License
 # To avoid storing license in a plain text file, we recommend storing it in an environment variable prefixed with `TF_VAR_` (i.e. `TF_VAR_jira_license`) and keep the below line commented out
 # If storing license as plain-text is not a concern for this environment, feel free to uncomment the following line and supply the license here.
 # ! IMPORTANT ! Please make sure valid license is used without spaces and new line symbols.
 # ! REQUIRED !
-jira_license = "jira-license"
+jira_license = "AAAB6Q0ODAoPeNqVUtFu2jAUfc9XWNpLpy1REiClSJbWJd6aKiSU0NJOvJhwCWmJk9oOjH79nACCjRZpjz7WPeeec+6nmEp0WzFk28hs9yynZ7aR642QbdptzeVAZVYwj0rANaKbjm7bWpAlwASMNiWENAfsRv0+Gbr+daA9Z5wau38yy+ppTMIRGQ6Gfky0sMqnwKP5vQAusG7tqcjvMuObI53LWqchK3kxqxJp1A9dFHO5phwMmshsBVjyCrS4moqEZ2Uj1iBkRZcVPbwbIsVOXWAS+BZcbqVvqFjgvrt2f3jWfFqlya/H5/ZMvpJx98vwqbuWA//m4Xpxx9qs1Xkbj9dLVqTDkRmVnfuU5UX/bT3BE7x34ns48L2YhHpgm63Ole10zvmIJeX1RnO6FMoJ8BVwRfH90bT1q6fI0v2w6+hB1PmpvcDmQaVWm7Ic07w0u62WpaUcgC2KsgR+JvdBxZMFFfBvk8fTTTQlz8Q+VhLiv328o/XeDXhwqONWuUXxzi26qDtA2xI+T3ro0JPWp5lCGWXJ/x/DyVUdL3p8KWc4PriOfeK2FvGUskxsr2oENBdf0bjgLyiQM0NzCyaVElE2lngBbKbmCmbkqt3NtzRXqJEU+XaBk3Ub9GTPMwnv1Br4Y7E/ah1U1jAsAhQNVfEIXVhC5b/KIp5ZgnXoN7vv2QIUIkA4L3GkXLqKU7SC5HDAqZvCxVU=X02n7"
 confluence_license = "confluence-license"
 bitbucket_license = "bitbucket-license"
 crowd_license = "crowd-license"
@@ -33,7 +33,7 @@ bamboo_license = "bamboo-license"
 # Number of product application nodes.
 # Note: For initial installation this value needs to be set to 1 and it can be changed only after product is fully
 # installed and configured.
-jira_replica_count = 1
+jira_replica_count = 2
 confluence_replica_count = 1
 bitbucket_replica_count = 1
 crowd_replica_count = 1
